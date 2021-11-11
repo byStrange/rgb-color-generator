@@ -45,7 +45,9 @@
 	 btn.onclick = function() {
 	         range[0].value = random(255)
 	         range[1].value = random(255)
-	         range[2].value = random(255)
+	         range[2].value = random(255);
+	         document.body.style.background = `rgb(${range[0].value}, ${range[1].value},  ${range[2].value})`;
+	         h1.innerHTML = `rgb(${range[0].value}, ${range[1].value},  ${range[2].value})`
 	     }
 	     // faqat rgb qiymat qaytaradi 
 	     // ishlatish 
