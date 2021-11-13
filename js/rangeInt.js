@@ -43,11 +43,19 @@
 	 }
 	 let btn = document.querySelector('.random');
 	 btn.onclick = function() {
+<<<<<<< HEAD
 	         range[0].value = random(255)
 	         range[1].value = random(255)
 	         range[2].value = random(255);
 	         document.body.style.background = `rgb(${range[0].value}, ${range[1].value},  ${range[2].value})`;
 	         h1.innerHTML = `rgb(${range[0].value}, ${range[1].value},  ${range[2].value})`
+=======
+	         range[0].value = random(255);
+	         range[1].value = random(255);
+	         range[2].value = random(255);
+		 document.body.style.background = `rgb(${range[0].value},${range[1].value},${range[2].value})`;
+		 h1.innerHTML = `rgb(${range[0].value},${range[1].value},${range[2].value})`
+>>>>>>> c9618b9803589562af56300b375607a4ca492928
 	     }
 	     // faqat rgb qiymat qaytaradi 
 	     // ishlatish 
