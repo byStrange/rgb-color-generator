@@ -26,7 +26,7 @@
 
 	 function main() {
 	     document.body.style.background = `rgb(${range[0].value},${range[1].value},${range[2].value})`
-	     h1.innerHTML = `rgb(${range[0].value},${range[1].value},${this.value})`
+	     h1.innerHTML = `rgb(${range[0].value},${range[1].value},${range[2].value})`
 	 }
 	 setInterval(function() {
 	     intt.value = h1.innerHTML
@@ -43,19 +43,16 @@
 	 }
 	 let btn = document.querySelector('.random');
 	 btn.onclick = function() {
-<<<<<<< HEAD
 	         range[0].value = random(255)
 	         range[1].value = random(255)
 	         range[2].value = random(255);
 	         document.body.style.background = `rgb(${range[0].value}, ${range[1].value},  ${range[2].value})`;
 	         h1.innerHTML = `rgb(${range[0].value}, ${range[1].value},  ${range[2].value})`
-=======
 	         range[0].value = random(255);
 	         range[1].value = random(255);
 	         range[2].value = random(255);
 		 document.body.style.background = `rgb(${range[0].value},${range[1].value},${range[2].value})`;
 		 h1.innerHTML = `rgb(${range[0].value},${range[1].value},${range[2].value})`
->>>>>>> c9618b9803589562af56300b375607a4ca492928
 	     }
 	     // faqat rgb qiymat qaytaradi 
 	     // ishlatish 
@@ -136,6 +133,21 @@
 	 window.onresize = fsize
 
 	 function fsize() {
-	     h1.style.fontSize = (window.innerWidth / 11) + 'px'
+	     if(window.matchMedia( '(min-width: 320px) and (max-width:480px)' ).matches){
+	     	h1.style.fontSize = '33px'
+	     }
+	     if(window.matchMedia( '(min-width: 481px) and (max-width:768px)' ).matches) {
+	     	h1.style.fontSize = '50px'
+	     }
+	     else {
+		     h1.style.fontSize = (window.innerWidth / 11) + 'px';
+	     }
 	 }
 	 fsize()
+/*/ 
+320px — 480px: Mobile devices.
+481px — 768px: iPads, Tablets.
+769px — 1024px: Small screens, laptops.
+1025px — 1200px: Desktops, large screens.
+1201px and more — Extra large screens, TV.
+/*/ 

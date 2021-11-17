@@ -107,7 +107,7 @@ input[type="text"]{
 #hashTag{
 	position: absolute;
 	top: 0;
-	left: -40px;
+	left: 0px;
 	border-top-left-radius: 10px;
 	border-bottom-left-radius: 10px;
 	color: #fff;
@@ -120,8 +120,14 @@ input[type="text"]{
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 .intas{
-	opacity:0;position: absolute;top: 100%;left: 100%;
+	opacity:0;position: absolute;top: 0%;left: 0%;
 }
 .intas::selection{
 	background: transparent;
+}
+.hexInt{
+	margin-left: 40px;
+}
+.generator{
+	border: 1px solid #000;
 }
